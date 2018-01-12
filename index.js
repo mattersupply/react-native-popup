@@ -41,7 +41,7 @@ class PopContent extends Component{
 						let tipContent = [];
 						if(content instanceof Array){
 							content.forEach((item, index, arr) => {
-								if(index > 9){ 
+								if(index > 9){
 									return;
 								}
 								item && ( tipContent[index] = (<Text style={styles.tipContent} key={'tipContent' + index}>{item}</Text>) );
@@ -332,6 +332,7 @@ let styles = StyleSheet.create({
 	tipContent: {
 		fontSize: 16,
 		marginBottom: 5,
+		paddingHorizontal: 13,
 		textAlign: 'center',
 	},
 	line: {
